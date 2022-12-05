@@ -7,7 +7,7 @@
       <div class="field">
         <div class="control">
           <label for="length">Length</label>
-          <input (input)="onChangeLength($event.target.value)" type="text" name="length" class="input">
+          <input (input)="onChangeLength($any($event.target).value)" type="number" name="length" class="input">
         </div>
       </div>
 
